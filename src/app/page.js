@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from 'react'
+
 
 import img1 from "./small/img-1.jpg";
 import img2 from "./small/img-2.jpg";
@@ -10,17 +10,18 @@ import img6 from "./small/img-6.jpg";
 import Image from 'next/image';
 
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
 
+function Home() {
+  return (
+    <>
       <Image src={img1} alt="Picture of the author" />
       <Image src={img2} alt="Picture of the author" />
       <Image src={img3} alt="Picture of the author" />
       <Image src={img4} alt="Picture of the author" />
       <Image src={img5} alt="Picture of the author" />
       <Image src={img6} alt="Picture of the author" />
-
-    </div>
+    </>
   )
 }
+
+export default Home
